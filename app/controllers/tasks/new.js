@@ -8,6 +8,16 @@ export default Ember.Controller.extend({
 			var desc = this.get('desc');
 			// alert(title + date + desc);
 
+				var newTask = this.store.createRecord('rr', {
+					title: title,
+					desc: desc,
+					date: date
+				});
+
+				var data = this.get('store').findAll('rr');
+				// console.log(data);
+
+
 			this.setProperties({
 				title : '',
 				date : '',
