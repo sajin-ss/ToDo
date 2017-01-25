@@ -31,7 +31,7 @@ export default function() {
   
   this.get('/rrs', () => {
     return {
-      tasks: [ {
+      data: [ {
             title: ' df',
             date: ' df',
             desc: 'dfsdf'
